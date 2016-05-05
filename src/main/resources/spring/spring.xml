@@ -14,6 +14,8 @@
     
     <!-- 引入mybatis配置 -->
     <import resource="classpath:spring/spring-mybatis.xml"/>
+    <!-- splice sql import -->
+    <import resource="classpath:spring/spring-log4jdbc.xml"/>
      
     <!-- 扫描文件,自动注入  -->
     <context:component-scan base-package="cn.com.env.base"/>

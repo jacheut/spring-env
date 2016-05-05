@@ -88,6 +88,26 @@
 			<version>5.1.38</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- Logging -->
+	    <dependency>
+	      <groupId>org.slf4j</groupId>
+	      <artifactId>slf4j-api</artifactId>
+	      <version>1.7.5</version>
+	    </dependency>
+	    <!-- import logback jar -->
+	    <dependency>
+	      <groupId>ch.qos.logback</groupId>
+	      <artifactId>logback-classic</artifactId>
+	      <version>1.0.9</version>
+	    </dependency>
+	    
+	    <!-- show sql on std -->
+		<dependency>
+			<groupId>net.sf.log4jdbc</groupId>
+			<artifactId>log4jdbc4</artifactId>
+			<version>1.2.1</version>
+		</dependency>
 
 		<!-- jstl -->
 		<dependency>
