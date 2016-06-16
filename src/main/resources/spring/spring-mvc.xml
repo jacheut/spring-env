@@ -13,7 +13,10 @@
 	<context:component-scan base-package="cn.com.env.*" />
 
 	<annotation-driven />
-
+	
+	<!-- 方案二：使用spring mvc 的 resources 注解 用来处理静态文件 -->
+	<resources location="/WEB-INF/js/" mapping="/js/*"></resources>
+	
 	<!-- 对模型视图添加前后缀 -->
 	<beans:bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

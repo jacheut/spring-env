@@ -9,9 +9,6 @@
  	
  	<!-- 1. spring配置文件 -->
  	
-    <!-- 引入jdbc配置文件 -->
-    <context:property-placeholder file-encoding="UTF-8" location="classpath:spring/spring-jdbc.properties"/>
-    
     <!-- 引入mybatis配置 -->
     <import resource="classpath:spring/spring-mybatis.xml"/>
     <!-- splice sql import -->

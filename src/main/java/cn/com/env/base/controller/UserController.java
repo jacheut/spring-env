@@ -28,6 +28,6 @@ public class UserController {
 		System.out.println("name=" + user.getUsername());
 		request.setAttribute("user", user);
 		log.info(user.getUsername());
-		return "user";
+		return "hello";
 	}
 }
