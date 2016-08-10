@@ -103,11 +103,11 @@
 	    </dependency>
 	    
 	    <!-- show sql on std -->
-		<dependency>
+		<!--<dependency>
 			<groupId>net.sf.log4jdbc</groupId>
 			<artifactId>log4jdbc4</artifactId>
 			<version>1.2.1</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- jstl -->
 		<dependency>

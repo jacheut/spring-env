@@ -8,7 +8,8 @@
 	default-lazy-init="true">
 
 	<!-- 4. log4jdbc拦截器，可以拼装sql的参数，成完整的sql -->
-	<bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor" />  
+	<!-- 可以不使用 -->
+	<!--<bean id="log4jdbcInterceptor" class="net.sf.log4jdbc.DataSourceSpyInterceptor" />
 	<bean id="dataSourceLog4jdbcAutoProxyCreator" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">     
 		<property name="interceptorNames">         
 			<list>            
@@ -20,6 +21,6 @@
 				<value>dataSource</value>         
 			</list>     
 		</property>  
-	</bean> 
+	</bean> -->
 
 </beans>
