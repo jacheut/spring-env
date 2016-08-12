@@ -12,7 +12,7 @@ import cn.com.env.base.service.IUserService;
 /**
  * 事务在service层
  */
-@Service
+@Service("userService")
 @Transactional
 public class UserServiceImpl implements IUserService {
 	@Resource
@@ -21,5 +21,8 @@ public class UserServiceImpl implements IUserService {
 	public User findUserById(int id) {
 		return userDao.findUserById(id);
 	}
-	
+
+	public void test() {
+		System.out.println(1111);
+	}
 }

@@ -29,11 +29,18 @@
           
         <!-- 导入 jQuery 库 -->  
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>  
-        <script type="text/javascript">  
+        <script type="text/javascript" src="js/tools.js"></script>
+        <script type="text/javascript">
               
             $(function(){  
                 //点击ID为btn1 按钮,点亮 ID 为 one 的DIV区域  
-                $("#btn1").click(function(){  
+                $("#btn1").click(function(){
+                    var memo = encodeURI("刷卡");
+                    alert(memo);
+                    $.asyncGet("http://localhost:8080/user/name?applNo=131312&patchMemo=" + memo,function(res){
+                        alert(2);
+                        console.log(1);
+                    });
                     $("#one").css("background","#ffeeaa");//css() 更改 其css 属性值 的函数  
                 });  
                 $("#btn2").click(function(){  

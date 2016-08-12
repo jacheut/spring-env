@@ -13,7 +13,8 @@
     <import resource="classpath:spring/spring-mybatis.xml"/>
     <!-- splice sql import -->
     <import resource="classpath:spring/spring-log4jdbc.xml"/>
-     
+    <import resource="classpath:spring/spring-task.xml"/>
+
     <!-- 扫描文件,自动注入  -->
     <context:component-scan base-package="cn.com.env.base"/>
 </beans>
