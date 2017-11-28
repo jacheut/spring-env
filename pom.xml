@@ -16,6 +16,14 @@
 	</properties>
 
 	<dependencies>
+		<!--disconf-->
+		<dependency>
+			<groupId>com.baidu.disconf</groupId>
+			<artifactId>disconf-client</artifactId>
+			<version>2.6.30</version>
+		</dependency>
+
+
 		<!-- spring core start -->
 		<dependency>
 			<groupId>org.springframework</groupId>

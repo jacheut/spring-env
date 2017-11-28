@@ -5,11 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
           http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-    <task:scheduled-tasks>
-        <task:scheduled ref="userService" method="test"
-                        fixed-delay="6000" initial-delay="5000"/>
+    <!--<task:scheduled-tasks>-->
+        <!--<task:scheduled ref="userService" method="test"-->
+                        <!--fixed-delay="6000" initial-delay="5000"/>-->
 
-    </task:scheduled-tasks>
+    <!--</task:scheduled-tasks>-->
 
    <!-- <bean id="myScheduler"
           class="org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler">
